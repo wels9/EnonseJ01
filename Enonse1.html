@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+	let Ip=""
+    let pot;
+    Ip = prompt("Antre Adres Ip ou a:");
+		let sum=0;
+		let tab=[]
+		 Ip=Ip.replaceAll(".","")
+
+		
+		for (let i of Ip){
+			i=parseInt(i);
+			tab.push(i)
+		   
+		}
+
+		for(let i = 0; i<tab.length; i++){
+			sum += tab[i];
+		}
+pot= sum * tab.length
+		
+		console.log(sum);
+
+			
+console.log(` pot ki ouvri a se ${pot} `)
+//"127.0.0.1"
+
+    </script>
+</body>
+</html>

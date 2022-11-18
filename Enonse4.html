@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+		let tablo=[]
+		let tablo0=[]
+		let tablo1=[]
+		let tablo2=[]
+		let tablo3=[]
+		let N=20;
+		let a,b;
+		for(i=1; i<N; i++){
+			tablo.push(i)
+		}
+			for(let i of tablo){
+				a=tablo[1]
+				b=tablo[2]
+				if(i%a==0 && i%b!==0 ){
+				tablo0.push(i)
+				}else if(i%b==0 && i%a!==0 ){
+				 tablo1.push(i)
+			    }else if(i%a==0 && i%b==0 ){
+				 tablo2.push(i)
+			    }else{
+				  tablo3.push(i)
+				}
+			}
+	
+
+		
+
+
+
+		
+		console.log(`enteval${tablo}`)
+		console.log(`Miltip a, men ki pa miltip b:${tablo0}  total:${tablo0.length}`)
+		console.log(`Miltip b, men ki pa miltip a :${tablo1}  total:${tablo1.length}`)
+		console.log(`Miltip a ak b:${tablo2}  total:${tablo2.length}`)
+		console.log(`Ki pa miltip ni a ni b:${tablo3}  total:${tablo3.length}`)
+	</script>
+</body>
+</html>
