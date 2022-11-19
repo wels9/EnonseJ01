@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+let x =[0,1,2,3,4]
+
+
+function reverseArrray(x) {
+       let N;
+    let tab=[];
+      let tab1=[];
+    let tab2=[];
+ 
+
+
+N = x.reverse();
+console.log(N);
+tab=N.slice(0,4).reverse();
+tab.push(N.at(-1))
+console.log(tab);
+tab1=tab.slice(0,3).reverse()
+tab1.push(tab.at(-2),tab.at(-1));
+console.log(tab1);
+tab3=tab1.slice(0,2)
+ tab2=tab1.slice(2)
+let fin =tab.concat(d1)
+console.log(fin); 
+}
+</script>
+</body>
+</html>
